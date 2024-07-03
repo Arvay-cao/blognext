@@ -12,7 +12,8 @@ export default function Avatar({ author }) {
       <div className="w-12 h-12 relative mr-4">
         <Image
           src={author.node.avatar.url}
-          layout="fill"
+          width={96} // 根据需要调整宽度
+          height={96} // 根据需要调整高度
           className="rounded-full"
           alt={name}
         />
